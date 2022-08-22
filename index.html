@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <div class="wrapper">
+     <header>
+    <h1 class="title">
+      Rock, Paper, Scissors
+    </h1>
+    
+  </header>
+    <main>
+      <section class="players-section">
+        <div id="user">
+          <img class="display-img" id="user-display" src="images/blank.png" alt="image selected by user">
+          
+        </div>
+        <section id="score-card">
+          <div class="message">
+            <h1 class="message"></h1>
+          </div>
+          <div class="player-score">
+            <div class="players">
+              <h1 >You</h1>
+              <h1 id="user-score">0</h1>
+            </div>
+            <div class="players">
+              <h1 >Computer</h1>
+              <h1 id="comp-score">0</h1>
+            </div>
+          </div>
+          
+        </section>
+        <div id="comp">
+          <img class="display-img" id="comp-display" src="images/blank.png" alt="image selected by computer">
+        </div>
+      </section>
+      
+      <section>
+        <ul>
+        <li id="rock" class="game-object">
+          <img class="display-img" src="images/rock.png">
+        </li>
+        <li id="paper" class="game-object">
+          <img class="display-img" src="images/paper.png">
+        </li>
+        <li id="scissors" class="game-object">
+          <img class="display-img" src="images/scissors.png">
+        </li>
+      </ul>
+      </section>
+    </main>
+    <section class="modal-bg hidden">
+      <div class="modal-content">
+        <h1 class="winning-message">
+
+        </h1>
+        <button id="replay">Play Again?</button>
+      </div>
+    </section>
+  </div>
+ 
+  <script src="app.js"></script>
+</body>
+</html>
